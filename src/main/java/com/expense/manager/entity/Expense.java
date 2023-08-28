@@ -46,4 +46,10 @@ public class Expense {
 	public void setExpenseCategoryId(Long expenseCategoryId) {
 		this.expenseCategoryId = expenseCategoryId;
 	}
+
+	@Override
+	public String toString() {
+		return "Expense [expenseId=" + expenseId + ", expenseName=" + expenseName + ", description=" + description
+				+ ", expenseCategoryId=" + expenseCategoryId + "]";
+	}
 }
