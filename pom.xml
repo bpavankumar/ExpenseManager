@@ -12,7 +12,7 @@
 	<artifactId>ExpenseManager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ExpenseManager</name>
-	<description>DESCRIPTION</description>
+	<description>Expense Management PoC that displays the expenses made within a month and also elaborates on the spend patterns</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
