@@ -20,7 +20,8 @@ public class ExpenseController {
 
     @GetMapping("/expenses")
     public List<Expense> getAllExpenses() {
-        return expenseRepository.findByExpenseCategoryId(null); // Assuming top-level managers have null managerId
+    	// Assuming top-level managers have null managerId
+        return expenseRepository.findByExpenseCategoryId(null);
     }
 
     @GetMapping("/expenses/{id}")
