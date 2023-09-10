@@ -9,23 +9,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.expense.manager.entity.Expense;
-import com.expense.manager.repository.ExpenseRepository;
+import com.expense.manager.service.ExpenseService;
 
 @RestController
 @RequestMapping("/api")
 public class ExpenseController {
 
-    @Autowired
-    private ExpenseRepository expenseRepository;
+	@Autowired
+	private ExpenseService expenseService;
 
     @GetMapping("/expenses")
     public List<Expense> getAllExpenses() {
-    	// Assuming top-level managers have null managerId
-        return expenseRepository.findByExpenseCategoryId(null);
+        return expenseService.getAllExpenses();
     }
 
     @GetMapping("/expenses/{id}")
     public List<Expense> getExpensesByCategory(@PathVariable Long id) {
-        return expenseRepository.findByExpenseCategoryId(id);
+        return expenseService.getExpensesByCategory(id);
     }
 }
