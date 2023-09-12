@@ -11,3 +11,5 @@ INSERT INTO expense VALUES (9, 'Expenses made as part of Childrens Education or 
 INSERT INTO expense VALUES (10, 'Expenses made as part of Investments - usually FDs & RDs', null, 'Investment');
 INSERT INTO expense VALUES (11, 'Expenses made as part of LIC policy premiums for Self, Spouse & Kids', null, 'Insurances');
 INSERT INTO expense VALUES (12, 'Expenses made which do not fit the above categories', null, 'Other Expenses');
+
+UPDATE expense SET expense_category_id=null;
