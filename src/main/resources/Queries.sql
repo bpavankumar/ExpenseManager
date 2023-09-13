@@ -13,3 +13,6 @@ INSERT INTO expense VALUES (11, 'Expenses made as part of LIC policy premiums fo
 INSERT INTO expense VALUES (12, 'Expenses made which do not fit the above categories', null, 'Other Expenses');
 
 UPDATE expense SET expense_category_id=null;
+
+INSERT INTO expense VALUES (13, 'Expenses made at any restaurant as such', 1, 'Restaurant');
+INSERT INTO expense VALUES (14, 'Expenses made at any cafe or any other eatery as such', 1, 'Cafe');
