@@ -16,3 +16,12 @@ UPDATE expense SET expense_category_id=null;
 
 INSERT INTO expense VALUES (13, 'Expenses made at any restaurant as such', 1, 'Restaurant');
 INSERT INTO expense VALUES (14, 'Expenses made at any cafe or any other eatery as such', 1, 'Cafe');
+
+INSERT INTO expense VALUES (15, 'Expenses towards mobile postpaid bills', 2, 'Phone Bill');
+INSERT INTO expense VALUES (16, 'Expenses towards Electricity bills', 2, 'Electricity Bill');
+INSERT INTO expense VALUES (17, 'Expenses towards cooking gas cylinder bills', 2, 'Gas Bill');
+INSERT INTO expense VALUES (18, 'Expenses towards Water bills', 2, 'Water Bill');
+INSERT INTO expense VALUES (19, 'Expenses towards DTH cable bills', 2, 'Television Bill');
+INSERT INTO expense VALUES (20, 'Expenses towards Internet bills', 2, 'Internet Bill');
+INSERT INTO expense VALUES (21, 'Expenses towards Home loan EMI bills', 2, 'House EMI');
+INSERT INTO expense VALUES (22, 'Expenses towards paying rentals', 2, 'Rentals');
