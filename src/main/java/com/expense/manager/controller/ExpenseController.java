@@ -3,6 +3,7 @@ package com.expense.manager.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +20,10 @@ public class ExpenseController {
 	private ExpenseService expenseService;
 
     @GetMapping("/expenses")
-    public List<Expense> getAllExpenses() {
-        return expenseService.getAllExpenses();
+    public String getAllExpenses(Model model) {
+        List<Expense> topLevelExpenses = expenseService.getAllExpenses();
+        model.addAttribute("expenses", topLevelExpenses);
+        return "orgchart";
     }
 
     @GetMapping("/expenses/{id}")

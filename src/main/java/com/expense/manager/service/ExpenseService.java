@@ -14,7 +14,11 @@ public class ExpenseService {
 	private ExpenseRepository expenseRepository;
 
 	public List<Expense> getAllExpenses() {
-		// Assuming top-level managers have null managerId
+		return null;
+	}
+
+	public List<Expense> getAllTopLevelExpenses() {
+		// Assuming top-level expenses have null expenseCategoryId
 		return expenseRepository.findByExpenseCategoryId(null);
 	}
 
