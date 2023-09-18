@@ -25,3 +25,8 @@ INSERT INTO expense VALUES (19, 'Expenses towards DTH cable bills', 2, 'Televisi
 INSERT INTO expense VALUES (20, 'Expenses towards Internet bills', 2, 'Internet Bill');
 INSERT INTO expense VALUES (21, 'Expenses towards Home loan EMI bills', 2, 'House EMI');
 INSERT INTO expense VALUES (22, 'Expenses towards paying rentals', 2, 'Rentals');
+
+UPDATE expense SET expense_category_name = 'Food & Beverage' WHERE expense_category_id=1;
+UPDATE expense SET expense_category_name = 'Bills & Utilities' WHERE expense_category_id=2;
+
+ALTER TABLE expense DROP COLUMN expense_category_id;
