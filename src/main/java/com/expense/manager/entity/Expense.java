@@ -13,7 +13,15 @@ public class Expense {
 	private Long expenseId;
 	private String expenseName;
 	private String description;
-	private Long expenseCategoryId;
+	private String expenseCategoryName;
+
+	public String getExpenseCategoryName() {
+		return expenseCategoryName;
+	}
+
+	public void setExpenseCategoryName(String expenseCategoryName) {
+		this.expenseCategoryName = expenseCategoryName;
+	}
 
 	public Long getExpenseId() {
 		return expenseId;
@@ -39,17 +47,9 @@ public class Expense {
 		this.description = description;
 	}
 
-	public Long getExpenseCategoryId() {
-		return expenseCategoryId;
-	}
-
-	public void setExpenseCategoryId(Long expenseCategoryId) {
-		this.expenseCategoryId = expenseCategoryId;
-	}
-
 	@Override
 	public String toString() {
 		return "Expense [expenseId=" + expenseId + ", expenseName=" + expenseName + ", description=" + description
-				+ ", expenseCategoryId=" + expenseCategoryId + "]";
+				+ ", expenseCategoryName=" + expenseCategoryName + "]";
 	}
 }

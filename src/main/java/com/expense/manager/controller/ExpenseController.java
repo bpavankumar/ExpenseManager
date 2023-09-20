@@ -25,9 +25,4 @@ public class ExpenseController {
         model.addAttribute("expenses", topLevelExpenses);
         return "orgchart";
     }
-
-    @GetMapping("/expenses/{id}")
-    public List<Expense> getExpensesByCategory(@PathVariable Long id) {
-        return expenseService.getExpensesByCategory(id);
-    }
 }
