@@ -29,4 +29,5 @@ INSERT INTO expense VALUES (22, 'Expenses towards paying rentals', 2, 'Rentals')
 UPDATE expense SET expense_category_name = 'Food & Beverage' WHERE expense_category_id=1;
 UPDATE expense SET expense_category_name = 'Bills & Utilities' WHERE expense_category_id=2;
 
+--Altered the approach to use a category name instead of an id.
 ALTER TABLE expense DROP COLUMN expense_category_id;
